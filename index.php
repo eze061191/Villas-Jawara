@@ -1,4 +1,4 @@
-<?php  include "mobicms/before_html_tag.php";?><!DOCTYPE html>
+<!-?php  include "mobicms/before_html_tag.php";?-><!DOCTYPE html>
 <html  >
 <head>
   
@@ -7,10 +7,10 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/4d81e404-8130-4c22-95bd-7dee349fee22-jfif-removebg-preview-1.png" type="image/x-icon">
-  <meta name="description" content="<?php  echo $description;?>">
+  <meta name="description" content="<!-?php  echo $description;?->">
   
   
-  <title><?php  echo $title;?></title>
+  <title><!-?php  echo $title;?-></title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
