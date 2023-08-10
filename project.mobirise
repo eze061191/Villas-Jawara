@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Villas Jawara",
-    "currentPage": "index.php",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -66,7 +66,7 @@
       "enabled": true
     },
     "favicon": false,
-    "mbrsiteDomain": "0fzfo5zcrz",
+    "mbrsiteDomain": "villasjawara",
     "usedWebp": true,
     "cssOptimize": true,
     "lazyLoad": true,
@@ -77,17 +77,18 @@
     "cookiesAlert": false,
     "gdpr": false,
     "pwa-switcher": false,
-    "screenshot": "screenshot.png"
+    "screenshot": "screenshot.png",
+    "global_before_html": ""
   },
   "pages": {
-    "index.php": {
+    "index.html": {
       "settings": {
         "main": true,
-        "title": "<?php  echo $title;?>",
-        "meta_descr": "<?php  echo $description;?>",
+        "title": "Home",
+        "meta_descr": "",
         "header_custom": "",
         "footer_custom": "",
-        "html_before": "<?php  include \"mobicms/before_html_tag.php\";?>"
+        "html_before": ""
       },
       "components": [
         {
