@@ -44,7 +44,7 @@
       }
     ],
     "uniqCompNum": 37,
-    "versionPublish": "5.9.0",
+    "versionPublish": "5.9.6",
     "imageResize": true,
     "mcSmartCart": {
       "currency": "USD"
@@ -76,9 +76,16 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "pwa-switcher": false,
+    "pwa-switcher": true,
     "screenshot": "screenshot.png",
-    "global_before_html": ""
+    "global_before_html": "",
+    "PWA": {
+      "enabled": true,
+      "name": "Jawara App",
+      "icon": "@ADDONS_PATH@/pwa-builder/assets/icons/512x512.png",
+      "themeColor": "#6592e6"
+    },
+    "publishChangesOnly": true
   },
   "pages": {
     "index.html": {
@@ -551,7 +558,7 @@
           },
           "_name": "header6",
           "_sourceTheme": "newsm4",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header6\" group=\"Headers\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Revers\" name=\"reverse\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"9\" value=\"4\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Topic\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" value=\"#000000\" name=\"bgColor\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <div class>\n        <div class=\"row align-items-center\" mbr-class=\"{'flex-row-reverse' : reverse}\">\n            <div class=\"col-12 col-lg\">\n                <div class=\"mbr-figure\">\n                    <div class=\"image\">\n                        <img src=\"@PROJECT_PATH@/assets/images/89b5251b-4981-4bc9-a374-c47a134ca713.webp\" alt title>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"content_block\">\n                    <div class=\"card_topic\" mbr-if=\"showSubtitle\">\n                        <span mbr-text class=\"category_content mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".category_content, .card_topic\"><b>Most Read</b></span>\n                        <span mbr-icon class=\"mbr-iconfont mobi-mbri-clock mobi-mbri\"></span>\n                        <span mbr-text class=\"category_estimate mbr-medium mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".category_estimate, .card_topic\">August 27, 2025</span>\n                    </div>\n                    <h1 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Bienvenido a Villas Jawara,\n<div>¡tu hogar lejos de casa!</div></h1>\n                    <p class=\"mbr-text mbr-fonts-style mt-3\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">¡Bienvenido a Villas Jawara, donde puedes experimentar la espectacularidad de un volcán en tu propio jardín! Disfruta de nuestras villas rodeadas de exuberantes jardines tropicales y crea recuerdos inolvidables en nuestro paraíso volcánico en medio de la naturaleza serena.</p>\n                    <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-secondary-outline\" href=\"#\" data-app-placeholder=\"Type Text\">Read More<span class=\"mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn\"></span></a></div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header6\" group=\"Headers\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Revers\" name=\"reverse\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"9\" value=\"4\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Topic\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" value=\"#000000\" name=\"bgColor\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <div class>\n        <div class=\"row align-items-center\" mbr-class=\"{'flex-row-reverse' : reverse}\">\n            <div class=\"col-12 col-lg\">\n                <div class=\"mbr-figure\">\n                    <div class=\"image\">\n                        <img src=\"@PROJECT_PATH@/assets/images/89b5251b-4981-4bc9-a374-c47a134ca713.webp\" alt title>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"content_block\">\n                    <div class=\"card_topic\" mbr-if=\"showSubtitle\">\n                        <span mbr-text class=\"category_content mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".category_content, .card_topic\"><b>Most Read</b></span>\n                        <span mbr-icon class=\"mbr-iconfont mobi-mbri-clock mobi-mbri\"></span>\n                        <span mbr-text class=\"category_estimate mbr-medium mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".category_estimate, .card_topic\">August 27, 2025</span>\n                    </div>\n                    <h1 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Bienvenido a Villas Jawara,\n<div><a href=\"#\" class=\"text-white\"><b>¡tu hogar lejos de casa!</b></a></div></h1>\n                    <p class=\"mbr-text mbr-fonts-style mt-3\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">¡Bienvenido a Villas Jawara, donde puedes experimentar la espectacularidad de un volcán en tu propio jardín! Disfruta de nuestras villas rodeadas de exuberantes jardines tropicales y crea recuerdos inolvidables en nuestro paraíso volcánico en medio de la naturaleza serena.</p>\n                    <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-secondary-outline\" href=\"#\" data-app-placeholder=\"Type Text\">Read More<span class=\"mobi-mbri mobi-mbri-right mbr-iconfont mbr-iconfont-btn\"></span></a></div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "tEnIkriBMi",
           "_anchor": "header6-h",
           "_protectedParams": [],
@@ -1936,93 +1943,13 @@
           },
           "_name": "footer3",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer3\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"range\" inline title=\"Menu Items\" name=\"menuItems\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Social Items\" name=\"socialItems\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background8.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"row row-links\" mbr-if=\"menuItems > 0\">\n                <ul class=\"foot-menu\" mbr-list mbr-list-grow=\"menuItems\">\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"index.html#header6-h\" class=\"text-danger\">Inicio</a></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"index.html#features1-m\" class=\"text-danger\">Servicios</a></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"index.html#content6-z\" class=\"text-danger\">Villas</a></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"index.html#content4-v\" class=\"text-danger\">Flora/Fauna</a></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"index.html#testimonials4-w\" class=\"text-danger\">Clientes</a></li>\n                <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"index.html#form3-x\" class=\"text-danger\">Contactos</a></li></ul>\n            </div>\n            <div class=\"row social-row\" mbr-if=\"socialItems > 0\">\n                <div mbr-list mbr-list-grow=\"socialItems\" class=\"social-list align-right pb-2\">\n                    <div class=\"soc-item\">\n                        <a href=\"#\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-twitter socicon\" style=\"color: rgb(198, 148, 83); fill: rgb(198, 148, 83);\"></span>\n                        </a>\n                    </div>\n                    <div class=\"soc-item\">\n                        <a href=\"#\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-facebook socicon\" style=\"color: rgb(198, 148, 83); fill: rgb(198, 148, 83);\"></span>\n                        </a>\n                    </div>\n                    \n                    \n                    \n                    \n                </div>\n            </div>\n            <div class=\"row row-copirayt\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\">\n                    © Copyright 2025 Villas Jawara. All Rights Reserved.\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer3\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"range\" inline title=\"Menu Items\" name=\"menuItems\" min=\"0\" max=\"10\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Social Items\" name=\"socialItems\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background8.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"row row-links\" mbr-if=\"menuItems > 0\">\n                <ul class=\"foot-menu\" mbr-list mbr-list-grow=\"menuItems\">\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"index.html#header6-h\" class=\"text-danger\">Inicio</a></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"index.html#features1-m\" class=\"text-danger\">Servicios</a></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"index.html#content6-z\" class=\"text-danger\">Villas</a></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"index.html#content4-v\" class=\"text-danger\">Flora/Fauna</a></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"index.html#testimonials4-w\" class=\"text-danger\">Clientes</a></li>\n                <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"index.html#form3-x\" class=\"text-danger\">Contactos</a></li></ul>\n            </div>\n            <div class=\"row social-row\" mbr-if=\"socialItems > 0\">\n                <div mbr-list mbr-list-grow=\"socialItems\" class=\"social-list align-right pb-2\">\n                    <div class=\"soc-item\">\n                        <a href=\"#\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-twitter socicon\" style=\"color: rgb(198, 148, 83); fill: rgb(198, 148, 83);\"></span>\n                        </a>\n                    </div>\n                    <div class=\"soc-item\">\n                        <a href=\"#\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-facebook socicon\" style=\"color: rgb(198, 148, 83); fill: rgb(198, 148, 83);\"></span>\n                        </a>\n                    </div>\n                    \n                    \n                    \n                    \n                <div class=\"soc-item\">\n                        <a href=\"#\" target=\"_blank\">\n                            <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-instagram socicon\" style=\"color: rgb(198, 148, 83); fill: rgb(198, 148, 83);\"></span>\n                        </a>\n                    </div></div>\n            </div>\n            <div class=\"row row-copirayt\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\">\n                    © Copyright 2025 Villas Jawara. All Rights Reserved.\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "tEoepefo5q",
           "_anchor": "footer3-y",
           "_protectedParams": [],
           "_global": true,
           "_once": "footers",
           "_params": {}
-        },
-        {
-          "alias": "Singa4real-mobicms/components",
-          "_isSecondary": true,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            ".mbr-section": {
-              "text-align": "center",
-              "color": "#fff"
-            },
-            ".loading": {
-              "left": "0",
-              "position": "relative",
-              "top": "40",
-              "height": "100%",
-              "width": "100%",
-              "align-items": "center",
-              "display": "flex",
-              "justify-content": "center"
-            },
-            ".box": {
-              "position": "relative",
-              "width": "200px",
-              "height": "40px",
-              "display": "flex",
-              "align-items": "center",
-              "justify-content": "space-evently"
-            },
-            ".box span": {
-              "display": "block",
-              "height": "20px",
-              "width": "20px",
-              "background": "#000",
-              "border-radius": "50%",
-              "animation": "all-effect 0.6s linear infinite alternate",
-              "transform": "scale(0)"
-            },
-            ".box span:nth-child(1)": {
-              "animation-delay": "0.1s"
-            },
-            ".box span:nth-child(2)": {
-              "animation-delay": "0.2s"
-            },
-            ".box span:nth-child(3)": {
-              "animation-delay": "0.3s"
-            },
-            ".box span:nth-child(4)": {
-              "animation-delay": "0.4s",
-              "background": "@Lcolor"
-            },
-            ".box span:nth-child(5)": {
-              "animation-delay": "0.5s",
-              "background": "@Lcolor"
-            },
-            "@keyframes all-effect": {
-              "100%": {
-                "transform": "scale(1)"
-              }
-            },
-            "H4": {
-              "color": "#ffffff"
-            },
-            "H2": {
-              "color": "#465052"
-            },
-            "P": {
-              "color": "#232323"
-            }
-          },
-          "_name": "dynamicpage",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section mbr-id=\"mobicms_page\" plugins=\"Singa4real-mobicms\" class=\"mbr-section mobicms_page\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <select title=\"Page Name Access From\" name=\"Pnaf\">\n            <option value=\"url\">EXTERNAL PAGE NAME</option>\n            <option value=\"sinput\" selected>INTERNAL PAGE NAME</option>\n            <option value=\"advpage\">ADVANCE PHP EMBED PAGE</option>\n        </select>\n        <input type=\"text\" title=\"Page name\" name=\"Pn\" value=\"about\" condition=\"Pnaf == 'sinput'\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"7\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n       <input type=\"color\" title=\"Loading Color\" name=\"Lcolor\" value=\"#e6c63b\" selected>\n       <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n        <input type=\"checkbox\" title=\"Show Notification\" name=\"showNotice\" checked>\n    <!-- End block parameters -->\n    </mbr-parameters> \n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n<div mbr-if=\"showNotice\">\n    <div>\n  <h2><b>MobiCMS v1.2.0</b></h2>\n    <p>This is MobiCMS Dynamic page loader block. There three option to choose on the&nbsp;Page Name Access Type and they are explained below:<br><b><br></b><br><b>EXTERNAL PAGE NAME:</b>&nbsp;if you want to create a Dynamic url page that you can control true the url query variable called <b>\"pagename\"</b><br><b>INTERNAL PAGE NAME :</b> if you just want to create a Static url page but dynamic page content<br><b>ADVANCE PHP EMBED PAGE:&nbsp;</b>if you want to create an embedded Dynamic url page that you can control true the url query variable called <b>\"pagename\"</b>, with dynamic page title and description.(This option required that you have to change some static page value to Mobims dynamic content). And to have a dynamic page setup, following below instructions strictly.<br><br>1. Change your page extension from <b>.html</b> to <b>.php</b><br>2. paste this code&nbsp;&nbsp;<b>&lt;?php&nbsp; include \"mobicms/before_html_tag.php\";?&gt;</b> on the page Before&nbsp; &lt;!DOCTYPE&gt;, &lt;html&gt; and &lt;head&gt; tag<br>3. paste this code&nbsp;&nbsp;<b>&lt;?php&nbsp; echo $title;?&gt; </b>on the Page Title tag<br>4. paste this code&nbsp;&nbsp;<b>&lt;?php&nbsp; echo $description;?&gt; </b>on the Page Description tag<br>5. Finally Some 3rd party code editor escape <b>&lt;?php to&nbsp;&lt;!--?php</b> and <b>?&gt; to ?--&gt;</b> as Mobicms is built upon <b>PHP</b> therefore making it impossible for Mobicms to load your dynamic page content from the database. <br><b>Solution is:</b> After publishing your website and you noticed that your backend page is not showing up, look on the page source code, with any editor(Notepad ++ Preferably)&nbsp; for escaped code&nbsp;which should be on same line&nbsp;<b>&lt;!--?php</b>&nbsp;should be change to <b>&lt;?php</b> and&nbsp;<b>?--&gt;</b>&nbsp;to <b>?&gt;</b> and the issue will be fixed</p>\n        <p><b>Note:</b> You will have to disable this notice through the settings Cog before publishing your website to remove this information from your page<br><b>Also note:</b>&nbsp;that&nbsp; you can access Mobicms Backend after publish via <b>www.yourdomain.com/mobicms </b>and also you will need a php supported server&nbsp; version 5.4 and above to use mobicms backend extension.</p>\n    </div>\n\n </div>\n <div class=\"loading py-5\" id=\"loading\">\n  <div class=\"box\">\n          <span></span> <span></span> <span></span> <span></span> <span></span> \n     </div>\n </div>\n \n <div class=\"pagecontent\" mbr-if=\"Pnaf == 'url' || 'sinput'\" data-page=\"{{Pn}}\" mbr-class=\"{'pageurl': Pnaf == 'url', 'pagename': Pnaf == 'sinput'}\" style=\"display:none\" id=\"pagecontent\">\n </div>\n <div class=\"advancepage pagecontent\" mbr-if=\"Pnaf == 'advpage'\" style=\"display:none\" id=\"pagecontent\">\n <!--?php include \"mobicms/inside_html_body.php\";?-->\n </div>\n </div>\n \n</section>",
-          "_cid": "tMx93HL7Xo",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {},
-          "_anchor": "dynamicpage-10"
         }
       ]
     }
